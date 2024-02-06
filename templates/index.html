@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        /* Style the form for better presentation */
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        /* Style headings for better presentation */
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Style input fields and button */
+        input[type="text"],
+        input[type="password"],
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff; /* Blue color */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker blue color */
+        }
+    </style>
+</head>
+<body>
+
+<form action="/attendance-data" method="post">
+    <h2>Enrollment Number:</h2>
+    <input type="text" name="enr" placeholder="Enter your enrollment number">
+
+    <h2>Password:</h2>
+    <input type="password" name="pwd" placeholder="Enter your password">
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
